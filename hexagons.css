@@ -22,7 +22,8 @@ body{
   float:left;
   overflow:hidden;
   visibility:hidden;
-  transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+          transform: rotate(-60deg) skewY(30deg);
 }
 #categories li *{
   position:absolute;
@@ -34,8 +35,10 @@ body{
   text-align:center;
   color:#fff;
   overflow:hidden;
-  transform: skewY(-30deg) rotate(60deg);  
-	backface-visibility:hidden;
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+          transform: skewY(-30deg) rotate(60deg);  
+	-webkit-backface-visibility:hidden;  
+	        backface-visibility:hidden;
   
 }
 
@@ -51,6 +54,7 @@ body{
   padding:0 5%;
   background-color:#008080; background-color: rgba(0, 128, 128, 0.8);
   font-family: 'Raleway', sans-serif;
+  -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
   transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
 }
 #categories li h1{
@@ -97,7 +101,8 @@ body{
   #categories li:nth-child(9n+6), #categories li:nth-child(9n+7), #categories li:nth-child(9n+8), #categories li:nth-child(9n+9) {
     margin-top: -4.2%;
     margin-bottom: -4.2%;
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+            transform: translateX(50%) rotate(-60deg) skewY(30deg);
   }
   #categories li:nth-child(9n+6):last-child, #categories li:nth-child(9n+7):last-child, #categories li:nth-child(9n+8):last-child, #categories li:nth-child(9n+9):last-child{
     margin-bottom:0;
@@ -127,7 +132,8 @@ body{
   #categories li:nth-child(7n+5), #categories li:nth-child(7n+6), #categories li:nth-child(7n+7) {
     margin-top: -6.1%;
     margin-bottom: -6.1%;
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+            transform: translateX(50%) rotate(-60deg) skewY(30deg);
   }
   #categories li:nth-child(7n+5):last-child, #categories li:nth-child(7n+6):last-child, #categories li:nth-child(7n+7):last-child{
     margin-bottom:0;
@@ -157,7 +163,8 @@ body{
   #categories li:nth-child(5n+4), #categories li:nth-child(5n+5) {
     margin-top: -8.622%;
     margin-bottom: -8.622%;
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+            transform: translateX(50%) rotate(-60deg) skewY(30deg);
   }
   #categories li:nth-child(5n+4):last-child, #categories li:nth-child(5n+5):last-child{
     margin-bottom:0;
@@ -183,7 +190,8 @@ body{
   #categories li:nth-child(3n+3){
     margin-top: -13.392%;
     margin-bottom: -13.392%;
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+            transform: translateX(50%) rotate(-60deg) skewY(30deg);
   }
   #categories li:nth-child(3n+3):last-child{
     margin-bottom:0;
