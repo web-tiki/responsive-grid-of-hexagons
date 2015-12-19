@@ -12,6 +12,7 @@ body {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
+    padding:0.707% 0;
 }
 
 #hexGrid:after {
@@ -111,6 +112,8 @@ body {
     padding-top: 10%;
 }
 
+/* SPACING AND SIZING */
+
 @media (min-width:1201px) {
     .hex {
         width: 19.2%; /* = (100-4) / 5 */
@@ -120,8 +123,8 @@ body {
     .hex:nth-child(9n+7),
     .hex:nth-child(9n+8),
     .hex:nth-child(9n+9) {
-        margin-top: -4.2%;
-        margin-bottom: -4.2%;
+        margin-top: -4.83539322%;
+        margin-bottom: -4.83539322%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -159,8 +162,8 @@ body {
     .hex:nth-child(7n+5),
     .hex:nth-child(7n+6),
     .hex:nth-child(7n+7) {
-        margin-top: -6.1%;
-        margin-bottom: -6.1%;
+        margin-top: -6.29%;
+        margin-bottom: -6.29%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -194,8 +197,8 @@ body {
     }
     .hex:nth-child(5n+4),
     .hex:nth-child(5n+5) {
-        margin-top: -8.622%;
-        margin-bottom: -8.622%;
+        margin-top: -8.723%;
+        margin-bottom: -8.723%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -223,8 +226,8 @@ body {
         padding-bottom: 57.16%; /* =  width /0.866 */
     }
     .hex:nth-child(3n+3) {
-        margin-top: -13.392%;
-        margin-bottom: -13.392%;
+        margin-top: -13.582%;
+        margin-bottom: -13.582%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
