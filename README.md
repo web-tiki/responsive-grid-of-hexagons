@@ -3,7 +3,7 @@
 [View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)
 
 
-![Responsive grid of hexagons](http://i.stack.imgur.com/NyGjd.jpg)
+![Responsive grid of hexagons](http://i.imgur.com/COH7pIV.png)
 
 # Spacing and sizing calculations
 Everything here works in percents to make this grid responsive.
