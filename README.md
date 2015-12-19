@@ -11,7 +11,7 @@ Every thing here works in percents to make this grid responsive.
 
 ## Width of the hexagons
 w = width of the hexagon  
-n = number of hexagons per row
+n = number of hexagons per row  
 m = width of all left and right margins
 
 w = (100 - m) / n
@@ -30,8 +30,8 @@ Each even row is pushed to the right (1/2 hexagon width + 1/2 hex spacing)
 ### Vertical
 To make the vertical spacing between the hexagons the same as the horizontal spacing, the top and bottom margins of the even rows are negative.
 
-m = margin top and bottom
-h = 1/2 height of hexagon
+m = margin top and bottom  
+h = 1/2 height of hexagon  
 
 
 m = - h + h * cos(60deg) + sin (45deg)
