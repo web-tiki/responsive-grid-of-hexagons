@@ -13,7 +13,7 @@ Everything here works in percents to make this grid responsive.
 
 ```
 w = width of the hexagon  
-n = number of hexagons per row  
+n = number of hexagons per odd row  
 m = width of all left and right margins
 
 w = (100 - m) / n
