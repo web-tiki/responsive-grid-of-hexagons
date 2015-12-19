@@ -6,7 +6,7 @@
 ![Responsive grid of hexagons](http://i.stack.imgur.com/NyGjd.jpg)
 
 # Spacing and sizing calculations
-Every thing here works in percents to make this grid responsive.
+Everything here works in percents to make this grid responsive.
 
 
 ## Width of the hexagons
@@ -25,7 +25,7 @@ height = width * sin(60deg)
 ### Horizontal
 Horizontal margins are only applied in between hexagons. tThey are fluid and equal to 1% of width.
 
-Each even row is pushed to the right (1/2 hexagon width + 1/2 hex spacing)
+Each even row is pushed to the right (1/2 hexagon width + 1/2 hexagon horizontal spacing)
 
 ### Vertical
 To make the vertical spacing between the hexagons the same as the horizontal spacing, the top and bottom margins of the even rows are negative.
