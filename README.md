@@ -2,7 +2,7 @@
 
 **[View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)**
 
-![Responsive grid of hexagons demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)
+![Responsive grid of hexagons demo](i.imgur.com/COH7pIV.png)
 
 ##Features
 * The hexagon grid is responsive according to the width of the container
