@@ -2,12 +2,12 @@
 
 **[View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)**
 
-![Responsive grid of hexagons](http://i.imgur.com/COH7pIV.png)
+![Responsive grid of hexagons demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)
 
 ##Features
 * The hexagon grid is responsive according to the width of the container
 * Hexagons keep their aspect ratio according to their width
-* The number of hexagons per row is adaptive. And changes from 5 to 2 on media query break points
+* The number of hexagons per row is adaptive and changes from 5 to 2 on media query break points
 * A title and short text slide in on hover
 
 ## Customizing the hexagon grid
@@ -33,7 +33,7 @@ height = width * sin(60deg)
 ## Spacing
 ### Horizontal
 Horizontal margins are only applied in between hexagons. They are fluid and equal to 1% of width.  
-Even rows are pushed to the right with left margin on the first hexagon 
+Even numbered rows are pushed to the right with left margin on the first hexagon 
 ```
 m = left margin on first hexagon of even rows
 w = width of hexagons
