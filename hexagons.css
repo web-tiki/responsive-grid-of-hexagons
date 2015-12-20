@@ -117,14 +117,14 @@ body {
 @media (min-width:1201px) {
     .hex {
         width: 19.2%; /* = (100-4) / 5 */
-        padding-bottom: 22.17%; /* =  width /0.866 */
+        padding-bottom: 22.170%; /* =  width / sin(60deg) */
     }
     .hex:nth-child(9n+6),
     .hex:nth-child(9n+7),
     .hex:nth-child(9n+8),
     .hex:nth-child(9n+9) {
-        margin-top: -4.83539322%;
-        margin-bottom: -4.83539322%;
+        margin-top: -4.676%;
+        margin-bottom: -4.676%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -157,13 +157,13 @@ body {
 @media (max-width: 1200px) and (min-width:901px) {
     .hex {
         width: 24.25%; /* = (100-3) / 4 */
-        padding-bottom: 28.002%; /* =  width /0.866 */
+        padding-bottom: 28.001%; /* =  width / sin(60deg) */
     }
     .hex:nth-child(7n+5),
     .hex:nth-child(7n+6),
     .hex:nth-child(7n+7) {
-        margin-top: -6.29%;
-        margin-bottom: -6.29%;
+        margin-top: -6.134%;
+        margin-bottom: -6.134%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -193,12 +193,12 @@ body {
 @media (max-width: 900px) and (min-width:601px) {
     .hex {
         width: 32.666%; /* = (100-2) / 3 */
-        padding-bottom: 37.721%; /* =  width /0.866 */
+        padding-bottom: 37.720%; /* =  width / sin(60) */
     }
     .hex:nth-child(5n+4),
     .hex:nth-child(5n+5) {
-        margin-top: -8.723%;
-        margin-bottom: -8.723%;
+        margin-top: -8.564%;
+        margin-bottom: -8.564%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -223,11 +223,11 @@ body {
 @media (max-width: 600px) {
     .hex {
         width: 49.5%; /* = (100-1) / 2 */
-        padding-bottom: 57.16%; /* =  width /0.866 */
+        padding-bottom: 57.158%; /* =  width / sin(60) */
     }
     .hex:nth-child(3n+3) {
-        margin-top: -13.582%;
-        margin-bottom: -13.582%;
+        margin-top: -13.423%;
+        margin-bottom: -13.423%;
         -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
             -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
                 transform: translateX(50%) rotate(-60deg) skewY(30deg);
