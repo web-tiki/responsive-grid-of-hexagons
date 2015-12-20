@@ -36,8 +36,9 @@ To make the vertical spacing between the hexagons the same as the horizontal spa
 
 ```
 m = margin top and bottom  
-h = 1/2 height of hexagon  
+h = 1/2 height of hexagon
+s = horizontal spacing between hexagons
 
 
-m = - h + h * cos(60deg) + sin (45deg)
+m = - h + h * cos(60deg) + s * sin (60deg)
 ```
