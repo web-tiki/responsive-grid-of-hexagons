@@ -12,7 +12,7 @@
 
 ## Customizing the hexagon grid
 **Text and hover effect:**  
-The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completly or change the hover effect, font, size...
+The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completly or change the hover effect, font, size...  
 **Changing the number of hexagons per row:**  
 The sizing and spacing defines the number of hexagons per row. The CSS properties for that are all in the media queries.
 ## Spacing and sizing calculations
