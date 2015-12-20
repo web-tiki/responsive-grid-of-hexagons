@@ -9,6 +9,7 @@
 * Hexagons keep their aspect ratio according to their width
 * The number of hexagons per row is adaptive. And changes from 5 to 2 on media query break points
 * A title and short text slide in on hover
+
 ## Customizing the hexagon grid
 ### Text and hover effect
 The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completly or change the hover effect, font, size...
