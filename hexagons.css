@@ -68,17 +68,20 @@ body {
     background-color: #008080;
     background-color: rgba(0, 128, 128, 0.8);
     font-family: 'Raleway', sans-serif;
-    -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
-            transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+    -webkit-transition: transform .2s ease-out, .2s padding .2s ease-out;
+            transition: transform .2s ease-out, .2s padding .2s ease-out;
 }
 
 .hex h1 {
-    bottom: 110%;
+    bottom: 50%;
     font-style: italic;
     font-weight: normal;
     font-size: 1.5em;
     padding-top: 100%;
     padding-bottom: 100%;
+	-webkit-transform:translateY(-100%);
+		-ms-transform:translateY(-100%);
+			transform:translateY(-100%);
 }
 
 .hex h1:after {
@@ -95,21 +98,28 @@ body {
 
 .hex p {
     padding-top: 50%;
-    top: 110%;
+    top: 50%;
     padding-bottom: 50%;
+	-webkit-transform:translateY(100%);
+		-ms-transform:translateY(100%);
+			transform:translateY(100%);
 }
 
 
 /* HOVER EFFECT  */
 
 .hexIn:hover h1 {
-    bottom: 50%;
-    padding-bottom: 10%;
+    padding-bottom: 10%;	
+	-webkit-transform:translateY(0%);
+		-ms-transform:translateY(0%);
+			transform:translateY(0%);
 }
 
 .hexIn:hover p {
-    top: 50%;
     padding-top: 10%;
+	-webkit-transform:translateY(0%);
+		-ms-transform:translateY(0%);
+			transform:translateY(0%);
 }
 
 /* SPACING AND SIZING */
