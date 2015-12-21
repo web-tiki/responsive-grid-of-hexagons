@@ -4,7 +4,8 @@
 }
 
 body {
-    background: rgb(123, 158, 158);
+    background: rgb(123, 158, 158);    
+    font-family: 'Raleway', sans-serif;
 }
 
 #hexGrid {
@@ -12,7 +13,6 @@ body {
     width: 90%;
     margin: 0 auto;
     padding:0.866% 0;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
@@ -259,4 +259,43 @@ body {
     #hexGrid {
         font-size: 13px;
     }
+}
+
+#fork{
+    position:fixed;
+    left:0;
+    top:0;
+    color:#000;
+    text-decoration:none;
+    border:1px solid #000;
+    padding:.5em .7em;
+    margin:1%;
+    -webkit-transition: color .5s;
+            transition: color .5s;
+    overflow:hidden;
+    z-index:1;
+}
+#fork:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 130%; height: 100%;
+    background: #000;
+    z-index: -1;
+    -webkit-transform-origin:0 0 ;
+        -ms-transform-origin:0 0 ;
+            transform-origin:0 0 ;
+    -webkit-transform:translateX(-100%) skewX(-45deg);
+        -ms-transform:translateX(-100%) skewX(-45deg);
+            transform:translateX(-100%) skewX(-45deg);
+    -webkit-transition: -webkit-transform .5s;
+            transition: transform .5s;
+}
+#fork:hover {
+    color: #fff;
+}
+#fork:hover:before {
+    -webkit-transform: translateX(0) skewX(-45deg);
+        -ms-transform: translateX(0) skewX(-45deg);
+            transform: translateX(0) skewX(-45deg);
 }
