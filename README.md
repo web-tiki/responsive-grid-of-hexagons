@@ -1,5 +1,5 @@
-# Responsive grid of hexagons demo
-This is the demo branch for the [responsive grid of hexagon](https://github.com/web-tiki/responsive-grid-of-hexagons) repositery.  
+# Responsive grid of hexagons demo branch
+This is the demo branch for the [ HTML & CSS responsive grid of hexagon](https://github.com/web-tiki/responsive-grid-of-hexagons) repositery.  
 Link to the demo : http://web-tiki.github.io/responsive-grid-of-hexagons/
 
 
