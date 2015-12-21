@@ -4,7 +4,6 @@
 }
 
 body {
-    font-family: 'Open Sans', arial, sans-serif;
     background: rgb(123, 158, 158);
 }
 
@@ -13,6 +12,8 @@ body {
     width: 90%;
     margin: 0 auto;
     padding:0.866% 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 
 #hexGrid:after {
@@ -66,11 +67,12 @@ body {
 }
 
 .hex h1, .hex p {
-    width: 100%;
+    width: 102%;
+    left:-1%; /* prevent line on the right where background doesn't cover image */
     padding: 5%;
     box-sizing:border-box;
-    background-color: rgba(0, 128, 128, 0.8);
-    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 128, 128, 0.8);    
+    font-weight: 300;
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
             transition:          transform .2s ease-out, opacity .3s ease-out;
     -webkit-font-smoothing: subpixel-antialiased; /* fix for font antialiasing after hover transition */
@@ -79,7 +81,6 @@ body {
 .hex h1 {
     bottom: 50%;
     padding-top:50%;
-    font-weight: normal;
     font-size: 1.5em;
     z-index: 1;
     -webkit-transform:translateY(-100%) translatez(-1px);
@@ -252,5 +253,10 @@ body {
     }
     .hex:nth-child(3n+4) {
         clear: left;
+    }
+}
+@media (max-width: 400px) {
+    #hexGrid {
+        font-size: 13px;
     }
 }
