@@ -4,7 +4,7 @@
 }
 
 body {
-    background: rgb(123, 158, 158);    
+    background: rgb(123, 158, 158);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -37,7 +37,7 @@ body {
 .hex * {
     position: absolute;
     visibility: visible;
-    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */    
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
 
 .hexIn {
@@ -71,7 +71,7 @@ body {
     left:-1%; /* prevent line on the right where background doesn't cover image */
     padding: 5%;
     box-sizing:border-box;
-    background-color: rgba(0, 128, 128, 0.8);    
+    background-color: rgba(0, 128, 128, 0.8);
     font-weight: 300;
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
             transition:          transform .2s ease-out, opacity .3s ease-out;
@@ -110,13 +110,13 @@ body {
 /* HOVER EFFECT  */
 
 
-.hexIn:hover h1 {
+.hexIn:hover h1, .hexIn:focus h1 {
     -webkit-transform:translateY(0%) translatez(-1px);
         -ms-transform:translateY(0%) translatez(-1px);
             transform:translateY(0%) translatez(-1px);
 }
 
-.hexIn:hover p {
+.hexIn:hover p, .hexIn:focus p {
     -webkit-transform:translateY(0%) translatez(-1px);
         -ms-transform:translateY(0%) translatez(-1px);
             transform:translateY(0%) translatez(-1px);
