@@ -9,6 +9,7 @@
 * Hexagons keep their aspect ratio according to their width
 * The number of hexagons per row is adaptive and changes from 5 to 2 on media query break points
 * A title and short text slide in on hover
+* Focused hexagons are highlighted and can be cycled through with tab
 
 ## Customizing the hexagon grid
 **Text and hover effect:**  
