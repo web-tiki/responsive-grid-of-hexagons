@@ -10,7 +10,7 @@ body {
 
 #hexGrid {
     overflow: hidden;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding:0.866% 0;
     font-size: 15px;
@@ -261,18 +261,24 @@ body {
     }
 }
 
-#fork{
+/*** Buttons for demo ***/
+#share{
     position:fixed;
-    left:0;
-    top:0;
-    color:#000;
-    text-decoration:none;
-    border:1px solid #000;
-    padding:.5em .7em;
+    left:0; top:0;
     margin:1%;
+    width:140px;
+}
+#fork{
+    position:relative;
+    display:block;
+    color:#000;
+    border:1px solid #000;
+    padding:.5em 0 ;
     -webkit-transition: color .5s;
             transition: color .5s;
     overflow:hidden;
+    text-decoration:none;
+    text-align:center;
     z-index:1;
 }
 #fork:before {
@@ -298,4 +304,21 @@ body {
     -webkit-transform: translateX(0) skewX(-45deg);
         -ms-transform: translateX(0) skewX(-45deg);
             transform: translateX(0) skewX(-45deg);
+}
+.socials {
+    float:left;
+    width:33.33%;
+    text-align:center;
+    margin-top:0.7em;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: -webkit-filter .5s ease-out;
+            transition:         filter .5s ease-out;
+}
+.socials:hover{
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+}
+.socials img{
+  width:60%;
 }
