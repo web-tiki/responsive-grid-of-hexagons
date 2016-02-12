@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background: rgb(123, 158, 158);
 }
-
 #hexGrid {
     overflow: hidden;
     width: 90%;
@@ -15,13 +13,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
-
 #hexGrid:after {
     content: "";
     display: block;
     clear: both;
 }
-
 .hex {
     position: relative;
     list-style-type: none;
@@ -33,13 +29,11 @@ body {
         -ms-transform: rotate(-60deg) skewY(30deg) translatez(-1px);
             transform: rotate(-60deg) skewY(30deg) translatez(-1px);
 }
-
 .hex * {
     position: absolute;
     visibility: visible;
     outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
-
 .hexIn {
     display:block;
     width: 100%;
@@ -52,18 +46,13 @@ body {
             transform: skewY(-30deg) rotate(60deg);
 }
 
-
-/* HEX CONTENT */
-
+/*** HEX CONTENT **********************************************************************/
 .hex img {
     left: -100%;
     right: -100%;
     width: auto;
     height: 100%;
     margin: 0 auto;
-    -webkit-transform: translatez(-1px);
-        -ms-transform: translatez(-1px);
-            transform: translatez(-1px);
 }
 
 .hex h1, .hex p {
@@ -75,9 +64,7 @@ body {
     font-weight: 300;
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
             transition:          transform .2s ease-out, opacity .3s ease-out;
-    -webkit-font-smoothing: subpixel-antialiased; /* fix for font antialiasing after hover transition */
 }
-
 .hex h1 {
     bottom: 50%;
     padding-top:50%;
@@ -87,7 +74,6 @@ body {
         -ms-transform:translateY(-100%) translatez(-1px);
             transform:translateY(-100%) translatez(-1px);
 }
-
 .hex h1:after {
     content: '';
     position: absolute;
@@ -97,7 +83,6 @@ body {
     text-align: center;
     border-bottom: 1px solid #fff;
 }
-
 .hex p {
     top: 50%;
     padding-bottom:50%;
@@ -107,24 +92,16 @@ body {
 }
 
 
-/* HOVER EFFECT  */
-
-
-.hexIn:hover h1, .hexIn:focus h1 {
+/*** HOVER EFFECT  **********************************************************************/
+.hexIn:hover h1, .hexIn:focus h1,
+.hexIn:hover p, .hexIn:focus p{
     -webkit-transform:translateY(0%) translatez(-1px);
         -ms-transform:translateY(0%) translatez(-1px);
             transform:translateY(0%) translatez(-1px);
 }
 
-.hexIn:hover p, .hexIn:focus p {
-    -webkit-transform:translateY(0%) translatez(-1px);
-        -ms-transform:translateY(0%) translatez(-1px);
-            transform:translateY(0%) translatez(-1px);
-}
-
-/* SPACING AND SIZING */
-
-@media (min-width:1201px) {
+/*** SPACING AND SIZING *****************************************************************/
+@media (min-width:1201px) { /* <- 5-4  hexagons per row */
     .hex {
         width: 19.2%; /* = (100-4) / 5 */
         padding-bottom: 22.170%; /* =  width / sin(60deg) */
@@ -163,8 +140,7 @@ body {
         margin-right: 1%;
     }
 }
-
-@media (max-width: 1200px) and (min-width:901px) {
+@media (max-width: 1200px) and (min-width:901px) {/* <- 4-3  hexagons per row */
     .hex {
         width: 24.25%; /* = (100-3) / 4 */
         padding-bottom: 28.001%; /* =  width / sin(60deg) */
@@ -199,8 +175,7 @@ body {
         margin-left: 0.5%;
     }
 }
-
-@media (max-width: 900px) and (min-width:601px) {
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
     .hex {
         width: 32.666%; /* = (100-2) / 3 */
         padding-bottom: 37.720%; /* =  width / sin(60) */
@@ -229,8 +204,7 @@ body {
         clear: left;
     }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
     .hex {
         width: 49.5%; /* = (100-1) / 2 */
         padding-bottom: 57.158%; /* =  width / sin(60) */
