@@ -57,6 +57,6 @@ m = - h + h * cos(60deg) + s * sin (60deg)
 For other patterns:
 * different number of hexagons per row
 * other centering options
-* have less hexagons on the even rows than on the odd ones
+* have fewer hexagons on the even rows than on the odd ones
  
 you can check this [codepen collection](http://codepen.io/collection/npgxpm/)
