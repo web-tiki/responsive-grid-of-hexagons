@@ -172,6 +172,7 @@ body {
     left:0; top:0;
     margin:1%;
     width:140px;
+    z-index:1;
 }
 #fork{
     position:relative;
