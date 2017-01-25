@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 2% auto;
   overflow: hidden;
   font-size: 15px;
   list-style-type: none;
