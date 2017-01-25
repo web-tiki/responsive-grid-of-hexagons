@@ -5,58 +5,61 @@
 ![Responsive grid of hexagons demo](http://i.imgur.com/COH7pIV.png)
 
 ##Features
-* The hexagon grid is responsive according to the width of the container
+* The hexagon grid is responsive according to the width of the container (`#hexGrid`)
 * Hexagons keep their aspect ratio according to their width
 * The number of hexagons per row is adaptive and changes from 5 to 2 on media query break points
-* A title and short text slide in on hover
-* Focused hexagons are highlighted and can be cycled through with tab
+* A title and short text slide in on hexagon hover and focus
+* Hexagons and can be cycled through with tab (keyboard navigation)
 
-## Customizing the hexagon grid
-**Text and hover effect:**  
-The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completly or change the hover effect, font, size...  
-**Changing the number of hexagons per row:**  
-The sizing and spacing defines the number of hexagons per row. The CSS properties for that are all in the media queries.
-## Spacing and sizing calculations
-Everything works in percents to make the hexagon grid responsive.
-### Width of the hexagons
-```
-w = width of the hexagon
-n = number of hexagons per odd row
-m = width of all left and right margins
+## Text and hover effect:
+The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completely or change the hover effect, font, font-size...  
 
-w = (100 - m) / n
-```
-### Height of the hexagons
-The height of the hexagons it defined by the bottom padding on the `.hex` element. This way they keep their aspect ratio and height changes according to the width.
-```
-height = width * sin(60deg)
-```
-## Spacing
-### Horizontal
-Horizontal margins are only applied in between hexagons. They are fluid and equal to 1% of width.  
-Even numbered rows are pushed to the right with left margin on the first hexagon 
-```
-m = left margin on first hexagon of even rows
-w = width of hexagons
-s = space between hexagons
+## Changing the number of hexagons per row:
+The width of the `.hex` elements defines the number of hexagons per row. The CSS properties that need to be changed are all in the media queries under the 'HEXAGON SIZING AND EVEN ROW INDENTATION' comment.  
+Each media query changes the number of hexagons per row, you can use them if you want to change the number of hexagons per row or:
 
-m = (w + s)/2
+To **change the number of hexagons per row**, you need to:
+
+### Width of '.hex'
+Customize the with of the '.hex' elements with:
 ```
-### Vertical
-To make the vertical spacing between the hexagons the same as the horizontal spacing, the top and bottom margins of the even rows are negative.
+w = width of the .hex elements in percent
+x = the number of hexagons you want on the odd rows (1st, 3rd, 5th...)
+
+w = 100 / x
+```
+
+Example for 8 hexagons on odd rows (this means there will be 7 hexagons on even rows):
+```
+w = 100 / 8 = 12.5%
+```
+
+### Indent even rows
+The even rows (2nd, 4th,6th...) are indented with 'margin-left' on the first hexagon of even rows.
+
+**The selector:**  
+You can select that hexagon with the '.hex:nth-child(an+b)' selector. To determine the selector, you can use this rule:
 
 ```
-m = margin top and bottom  
-h = 1/2 height of hexagon
-s = horizontal spacing between hexagons
-
-
-m = - h + h * cos(60deg) + s * sin (60deg)
+x = the number of hexagons on odd rows(1st, 3rd, 5th...)
+Y = the number of hexagons on even rows(2nd, 4th, 6th...)
+a = x + y
+b = x + 1
 ```
-## Other patterns for the hexagon grid
-For other patterns:
-* different number of hexagons per row
-* other centering options
-* have fewer hexagons on the even rows than on the odd ones
- 
-you can check this [codepen collection](http://codepen.io/collection/npgxpm/)
+
+Example for 8 hexagons on odd rows (this means there will be 7 hexagons on even rows):
+```
+x = 8
+y = 7
+a = 8 + 7 = 15
+b = 8 + 1 = 9
+
+The selector is : .hex:nth-child(15n+9)
+```
+
+**Value of margin-left:**
+The value of margin left is half the width of one hexagon so for 8 hexagons on odd row :
+```
+with of hexagons = 12.5% (see "width of .hex")
+margin-left = 12.5 / 2 = 6.25%
+```

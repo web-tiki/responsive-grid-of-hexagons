@@ -111,7 +111,7 @@ body {
           transform:translate3d(0,0,0);
 }
 
-/*** SPACING AND SIZING *****************************************************************/
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 @media (min-width:1201px) { /* <- 5-4  hexagons per row */
   #hexGrid{
     padding-bottom: 4.4%
@@ -120,7 +120,7 @@ body {
     width: 20%; /* = 100 / 5 */
   }
   .hex:nth-child(9n+6){ /* first hexagon of even rows */
-    margin-left:10%; /* = width / 2  */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -132,7 +132,7 @@ body {
     width: 25%; /* = 100 / 4 */
   }
   .hex:nth-child(7n+5){ /* first hexagon of even rows */
-    margin-left:12.5%; /* = width / 2  */
+    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -144,7 +144,7 @@ body {
     width: 33.333%; /* = 100 / 3 */
   }
   .hex:nth-child(5n+4){ /* first hexagon of even rows */
-    margin-left:16.666%; /* = width / 2  */
+    margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -156,7 +156,7 @@ body {
     width: 50%; /* = 100 / 3 */
   }
   .hex:nth-child(3n+3){ /* first hexagon of even rows */
-    margin-left:25%; /* = width / 2  */
+    margin-left:25%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
