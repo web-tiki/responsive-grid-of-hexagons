@@ -15,13 +15,13 @@
 The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completely or change the hover effect, font, font-size...  
 
 ## Changing the number of hexagons per row:
-The width of the `.hex` elements defines the number of hexagons per row. The CSS properties that need to be changed are all in the media queries under the 'HEXAGON SIZING AND EVEN ROW INDENTATION' comment.  
-Each media query changes the number of hexagons per row, you can use them if you want to change the number of hexagons per row or:
+The width of the `.hex` elements defines the number of hexagons per row. The CSS properties that need to be changed are all in the media queries under the `HEXAGON SIZING AND EVEN ROW INDENTATION` comment.  
+Each media query changes the number of hexagons per row.
 
 To **change the number of hexagons per row**, you need to:
 
-### Width of '.hex'
-Customize the with of the '.hex' elements with:
+### Width of `.hex`
+Customize the with of the `.hex` elements with:
 ```
 w = width of the .hex elements in percent
 x = the number of hexagons you want on the odd rows (1st, 3rd, 5th...)
@@ -35,10 +35,10 @@ w = 100 / 8 = 12.5%
 ```
 
 ### Indent even rows
-The even rows (2nd, 4th,6th...) are indented with 'margin-left' on the first hexagon of even rows.
+The even rows (2nd, 4th,6th...) are indented with `margin-left` on the first hexagon of even rows.
 
 **The selector:**  
-You can select that hexagon with the '.hex:nth-child(an+b)' selector. To determine the selector, you can use this rule:
+You can select that hexagon with the `.hex:nth-child(an+b)` selector. To determine the selector, you can use this rule:
 
 ```
 x = the number of hexagons on odd rows(1st, 3rd, 5th...)
@@ -57,7 +57,7 @@ b = 8 + 1 = 9
 The selector is : .hex:nth-child(15n+9)
 ```
 
-**Value of margin-left:**
+**Value of margin-left:**  
 The value of margin left is half the width of one hexagon so for 8 hexagons on odd row :
 ```
 with of hexagons = 12.5% (see "width of .hex")
