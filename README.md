@@ -42,6 +42,7 @@ You can select that hexagon with the `.hex:nth-child(an+b)` selector (more info 
 
 ```
 .hex:nth-child(an+b)
+
 x = the number of hexagons on odd rows(1st, 3rd, 5th...)
 Y = the number of hexagons on even rows(2nd, 4th, 6th...)
 a = x + y
