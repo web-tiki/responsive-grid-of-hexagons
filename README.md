@@ -38,9 +38,10 @@ w = 100 / 8 = 12.5%
 The even rows (2nd, 4th,6th...) are indented with `margin-left` on the first hexagon of even rows.
 
 **The selector:**  
-You can select that hexagon with the `.hex:nth-child(an+b)` selector (more inf on on the `nth-child()` pseudo-class on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)). To determine the selector, you can use this rule:
+You can select that hexagon with the `.hex:nth-child(an+b)` selector (more info on on the `nth-child()` pseudo-class on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)). To determine the selector, you can use this rule:
 
 ```
+.hex:nth-child(an+b)
 x = the number of hexagons on odd rows(1st, 3rd, 5th...)
 Y = the number of hexagons on even rows(2nd, 4th, 6th...)
 a = x + y
@@ -58,7 +59,7 @@ The selector is : .hex:nth-child(15n+9)
 ```
 
 **Value of margin-left:**  
-The value of margin left is half the width of one hexagon so for 8 hexagons on odd row :
+The value of margin left is **half the width of one hexagon** so for 8 hexagons on odd row :
 ```
 with of hexagons = 12.5% (see "width of .hex")
 margin-left = 12.5 / 2 = 6.25%
