@@ -72,7 +72,7 @@ body {
   width: 100%;
   padding: 5%;
   box-sizing:border-box;
-  background-color: rgb(243, 156, 18);
+  background-color: rgba(243, 156, 18 , 0.8);
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
@@ -95,7 +95,7 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #F39C12;
+  border-bottom: 1px solid rgba(243, 156, 18 , 0.8);
 }
 .hex p {
   top: 50%;
