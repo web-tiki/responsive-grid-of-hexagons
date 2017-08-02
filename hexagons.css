@@ -3,9 +3,10 @@
     padding: 0;
 }
 body {
-    background: rgb(123, 158, 158);
+    background: rgb(44, 62, 80);
 }
 #hexGrid {
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -71,7 +72,7 @@ body {
   width: 100%;
   padding: 5%;
   box-sizing:border-box;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgb(243, 156, 18);
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
@@ -88,11 +89,13 @@ body {
 .hex h1::after {
   content: '';
   position: absolute;
+  top: 0;
   bottom: 0;
-  left: 45%;
-  width: 10%;
+  right: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #F39C12;
 }
 .hex p {
   top: 50%;
