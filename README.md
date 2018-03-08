@@ -1,10 +1,11 @@
-#CSS and HTML responsive grid of hexagons.
+
+# CSS and HTML responsive grid of hexagons.
 
 **[View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)**
 
 ![Responsive grid of hexagons demo](http://i.imgur.com/COH7pIV.png)
 
-##Features
+## Features
 * The hexagon grid is responsive according to the width of the container (`#hexGrid`)
 * Hexagons keep their aspect ratio according to their width
 * The number of hexagons per row is adaptive and changes from 5 to 2 on media query break points
