@@ -228,3 +228,10 @@ body {
 .socials img{
   width:60%;
 }
+.credit {
+    font-size:.9em;
+    weight:600;
+}
+.credit a {
+    color:inherit;
+}
