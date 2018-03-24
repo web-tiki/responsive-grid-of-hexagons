@@ -66,3 +66,6 @@ The value of margin left is **half the width of one hexagon** so for 8 hexagons 
 with of hexagons = 12.5% (see "width of .hex")
 margin-left = 12.5 / 2 = 6.25%
 ```
+-------------
+
+Created by [web-tiki](https://web-tiki.com)
