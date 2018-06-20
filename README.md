@@ -1,71 +1,40 @@
 
-# CSS and HTML responsive grid of hexagons.
+# CSS and HTML responsive grid of hexagons with CSS grid layout.
+This branch uses **css grid** to layout the hexagons. 
+CSS grid makes the spacing calculations easier to understand and work with.
+The features are the same but browser support is not as good a the flexbox version.
 
 **[View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)**
 
 ![Responsive grid of hexagons demo](http://i.imgur.com/COH7pIV.png)
 
 ## Features
-* The hexagon grid is responsive according to the width of the container (`#hexGrid`)
-* Hexagons keep their aspect ratio according to their width
-* The number of hexagons per row is adaptive and changes from 5 to 2 on media query break points
-* A title and short text slide in on hexagon hover and focus
-* Hexagons and can be cycled through with tab (keyboard navigation)
+*Same as flexbox version*
 
 ## Text and hover effect:
-The CSS for the text and hover effect is identified in the `hexagons.css` stylesheet. You can remove it completely or change the hover effect, font, font-size...  
+*Same as flexbox version*
 
 ## Changing the number of hexagons per row:
-The width of the `.hex` elements defines the number of hexagons per row. The CSS properties that need to be changed are all in the media queries under the `HEXAGON SIZING AND EVEN ROW INDENTATION` comment.  
-Each media query changes the number of hexagons per row.
+*Same as flexbox version* except that the width of the hexagons is defined by the `grid-column-end: span 2;` (each hexagon spans on 2 columns) property and only needs to be defined once. The number of columns is changed with the `grid-template-columns` property in the media queries.
 
 To **change the number of hexagons per row**, you need to:
 
-### Width of `.hex`
-Customize the with of the `.hex` elements with:
-```
-w = width of the .hex elements in percent
-x = the number of hexagons you want on the odd rows (1st, 3rd, 5th...)
+### Change the number of columns
 
-w = 100 / x
-```
+with the `grid-template-columns` property. 
+The value `repeat(4,1fr)` repeats 4 times `1fr` so it makes 4 columns. as eash hexagon spans 2 columns, there are 3 hexagons per row.
 
-Example for 8 hexagons on odd rows (this means there will be 7 hexagons on even rows):
-```
-w = 100 / 8 = 12.5%
-```
 
 ### Indent even rows
-The even rows (2nd, 4th,6th...) are indented with `margin-left` on the first hexagon of even rows.
+The even rows (2nd, 4th,6th...) are indented with `grid-column-start: 2;` on the first hexagon of even rows.
 
 **The selector:**  
-You can select that hexagon with the `.hex:nth-child(an+b)` selector (more info on on the `nth-child()` pseudo-class on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)). To determine the selector, you can use this rule:
+*Same as flexbox version*
 
-```
-.hex:nth-child(an+b)
+**Value of margin-left:**
+*Not needed anymore*
 
-x = the number of hexagons on odd rows(1st, 3rd, 5th...)
-Y = the number of hexagons on even rows(2nd, 4th, 6th...)
-a = x + y
-b = x + 1
-```
+**More info on CSS grid layout:** [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
-Example for 8 hexagons on odd rows (this means there will be 7 hexagons on even rows):
-```
-x = 8
-y = 7
-a = 8 + 7 = 15
-b = 8 + 1 = 9
-
-The selector is : .hex:nth-child(15n+9)
-```
-
-**Value of margin-left:**  
-The value of margin left is **half the width of one hexagon** so for 8 hexagons on odd row :
-```
-with of hexagons = 12.5% (see "width of .hex")
-margin-left = 12.5 / 2 = 6.25%
-```
--------------
 
 Created by [web-tiki](https://web-tiki.com)
