@@ -1,12 +1,9 @@
 
-# CSS and HTML responsive grid of hexagons with CSS grid layout.
-This branch uses **css grid** to layout the hexagons. 
-CSS grid makes the spacing calculations easier to understand and work with.
+# Responsive grid of hexagons with CSS grid layout.
+This branch uses **css grid** to layout the hexagons.
+
+CSS grid layout makes the spacing calculations easier to understand and work with.
 The features are the same but browser support is not as good a the flexbox version.
-
-**[View live demo](http://web-tiki.github.io/responsive-grid-of-hexagons/)**
-
-![Responsive grid of hexagons demo](http://i.imgur.com/COH7pIV.png)
 
 ## Features
 *Same as flexbox version*
