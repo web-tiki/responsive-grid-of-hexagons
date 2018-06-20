@@ -19,7 +19,8 @@ To **change the number of hexagons per row**, you need to:
 ### Change the number of columns
 
 with the `grid-template-columns` property. 
-The value `repeat(4,1fr)` repeats 4 times `1fr` so it makes 4 columns. as eash hexagon spans 2 columns, there are 3 hexagons per row.
+The value `repeat(4,1fr)` repeats 4 times `1fr` so it makes 4 columns.   
+As eash hexagon spans 2 columns, there are 2 hexagons on even rows.
 
 
 ### Indent even rows
