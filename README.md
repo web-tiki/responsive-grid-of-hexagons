@@ -5,6 +5,10 @@
 
 ![Responsive grid of hexagons demo](http://i.imgur.com/COH7pIV.png)
 
+## Flexbox vs CSS grid
+This branch uses **flexbox** to layout the hexagons. Another version using **CSS grid layout** is availbale on the [css-grid branch](https://github.com/web-tiki/responsive-grid-of-hexagons/tree/css-grid).  
+CSS grid has lower browser support than flexbox (see [canIuse](https://caniuse.com/#feat=css-grid)) but makes the hexagon spacing easier to understand and work with.
+
 ## Features
 * The hexagon grid is responsive according to the width of the container (`#hexGrid`)
 * Hexagons keep their aspect ratio according to their width
