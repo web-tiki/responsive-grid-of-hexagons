@@ -1,6 +1,6 @@
 
 # Responsive grid of hexagons with CSS grid layout.
-This branch uses **css grid** to layout the hexagons.
+This branch uses **css grid** to layout the hexagons. The markup is unchanged, changes have only been made in the CSS file.
 
 CSS grid layout makes the spacing calculations easier to understand and work with.
 The features are the same but browser support is not as good a the flexbox version.
