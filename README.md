@@ -35,4 +35,4 @@ The even rows (2nd, 4th,6th...) are indented with `grid-column-start: 2;` on the
 **More info on CSS grid layout:** [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
 
-Created by [web-tiki](https://web-tiki.com)
+Created by [web-tiki](https://web-tiki.com/en/)
